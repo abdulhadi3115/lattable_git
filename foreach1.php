@@ -32,12 +32,26 @@ $variable_bulan = array ("January",
 <?php }?>
 </select>
 
+<select name="thn">
+<?php for ($thn=1980; $thn <=2019 ; $thn++) { 
+	echo "<option value='$thn'> $thn </option>";
+}?>
+</select>
+
 
 <select name="tgl">
 <?php for ($tgl=1; $tgl <=31; $tgl++) { ?>
 <option value="<?php echo $tgl; ?>"><?php echo $tgl; ?></option>
 <?php }?>
 </select>
+
+<select name="angka">
+	<?php for ($angka=0; $angka <=10; $angka++) { 
+		echo "<option valu='$angka'> $angka </option>";
+		}?>
+	</select>
+
+
 
 <input type="submit" name="submit" value="submit">
 
